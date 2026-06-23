@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts</title>
+</head>
+<style>
+    body{
+        font-family: 'Arial', sans-serif;
+        font-style: italic;
+        text-decoration: underline;
+        text-decoration-color: brown;
+    }
+
+    .h{
+        font-family: 'Times New Roman', serif;
+        color: blue;
+        font-weight: 500;
+        text-decoration-color: red;
+    }
+
+    .p{
+        font-family: 'Courier New', monospace;
+        text-decoration: overline;
+         font-weight: 1000;
+         color: red;
+         text-decoration-color: blueviolet;
+         text-decoration-style: wavy;
+    }
+
+    .h2{
+        font-family: 'Courier New', monospace;
+        text-decoration: overline;
+         font-weight: 1000;
+         color:#ff80bf;
+         text-decoration-color: rgb(83, 43, 226);
+         text-transform: uppercase;
+         text-decoration-style: dotted;
+    }
+
+
+</style>
+<body>
+    <div class="h">This is heading</div>
+    <br>
+    <div class="p">This is a paragraph</div>
+    <br>
+    <div class="h2">This is another heading</div>
+</body>
+</html>
