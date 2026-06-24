@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .Name {
+        text-align: center;
+      }
+
+      .L {
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 25px;
+        color: rgb(201, 30, 30);
+        letter-spacing: 5px;
+        display: inline-block;
+        border: 2px solid purple;
+      }
+
+      h1 {
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 25px;
+        color: rgb(201, 30, 30);
+        letter-spacing: 5px;
+        /* display: inline-block; */
+        /* border: 2px solid purple; */
+      }
+
+      h2 {
+        color: rgb(30, 124, 201);
+        font-family: "Courier New", Courier, monospace;
+        font-style: oblique;
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 10px;
+      }
+
+      p {
+        color: rgb(49, 196, 75);
+        font-family:
+          "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 12px;
+        font-weight: normal;
+      }
+      .L1 {
+        font-family: "Courier New", monospace;
+        text-decoration: overline;
+        font-weight: 1000;
+        color: red;
+        text-decoration-color: blueviolet;
+        text-decoration-style: wavy;
+      }
+      .L2 {
+        font-family: "Courier New", monospace;
+        text-decoration: overline;
+        font-weight: 1000;
+        color: #ff80bf;
+        text-decoration-color: rgb(83, 43, 226);
+        text-transform: uppercase;
+        text-decoration-style: dotted;
+      }
+      
+
+      /* Name colours , HEX colours , rgb colours , rgba colours and hsl colours  */
+      .M {
+        /* color: darkred; */
+        /* color: #0BEE0B; */
+        /* color: rgb(76, 125, 59); */
+        /* color: rgba(255, 22, 5, 0.175) */
+
+        color: hsl(130, 61%, 44%);
+        background-color: rgb(76, 125, 59);
+    }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="Name">
+      <div class="L">
+        <h1>Ronak!!!!!!!!!!</h1>
+      </div>
+    </div>
+
+    <div class="Random Shit">
+      <p>This is a paragraph</p>
+      <h2>Lets begin learning about css fonts</h2>
+    </div>
+
+    <div class="learn L1">
+      <h3>Lets begin learning about css fonts</h3>
+    </div>
+
+    <div class="learn L2">
+      <h3>Let mind think with curiosity</h3>
+    </div>
+
+    <div class="learn M">
+      <h3>Lets begin learning about css colour types</h3>
+    </div>
+  </body>
+</html>
