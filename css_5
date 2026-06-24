@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css specivity</title>
+<style>
+    /* Specificity in CSS preference order : */
+    /* inline styles > id selectors > class selectors > element selectors */
+
+/* this is a class selector with specificity of 10 */
+.cred{
+    color: red;
+}
+
+/* this is a class selector with specificity of 10 */
+.cyellow{
+    color: yellow;
+}
+
+/* specificity of this class selector is 10 */
+.cpurple{
+    color: purple;
+}
+
+/* this is an attribute selector and the specificity is 10 */
+[data-x="a"]{
+    color: blue;
+    background-color: rgb(30, 201, 90);
+}
+</style>
+</head>
+<body>
+
+    <!-- here order matters -->
+    <div class="cyellow cred cpurple">
+        <h3>Let mind think with curiosity</h3>
+    </div>
+    <!-- Specificity in CSS preference order : -->
+    <!-- inline styles > id selectors > class selectors > element selectors -->
+
+    <!-- here attribute selector has specificity of 10 also here order given to attribute selector in styles matters-->
+    <div class="cyellow cred cpurple" data-x="a">
+        <h3>Let mind think with curiosity</h3>
+    </div>
+
+    <!-- here inline style has highest specificity -->
+    <div style="color: green;" class="cyellow cred cpurple" data-x="a">
+        <h3>Let mind think with curiosity</h3>
+    </div>
+
+</body>
+</html>
