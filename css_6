@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning about px,rem,em,vhvw,% styles in css</title>
+<style>
+    /* root font size */
+    *{
+        margin : 0;
+        padding : 0;
+    }
+
+    /* root font size */
+    html{
+        font-size : 16px;
+    }
+
+    .L{
+        border : 2px solid rgb(30, 158, 201);
+        background-color: rgb(201, 30, 36);
+        color : rgb(19, 17, 17);
+        margin : 25px auto;
+        width : 100vh;
+        height : 50vh;
+    }
+    .container{
+        border : 2px solid rgb(201, 30, 170);
+        background-color: rgb(161, 201, 30);
+        color : rgb(17, 19, 19);
+        /* margin : auto; */
+        /* width : 100vh; */
+        /* font-size : 18px; */
+        /* ispe font size jo humne dia hai wohi rhega root wla si given when we dont give any font size or we have to give it to all fonts same size */
+        font-family : "Times New Roman", Times, serif;
+        height : 140vh; 
+        width: 100vw;
+    }
+    .container p{
+        width : 50%;
+        font-size : 2em;
+        border : 10px solid rgb(201, 64, 30);
+        height : 50%;
+    }
+    .container h1{
+        font-size : 2rem;
+        width : 50%;
+        border: 10px solid rgb(67, 30, 201);
+    }
+    .mycontainer{
+        border : 2px solid rgb(201, 110, 30);
+        background-color: rgb(30, 201, 135);
+        color : rgb(17, 19, 19);
+        height : 10vh; 
+        width: 100vw;
+        font-family : "Courier New", Courier, monospace;
+        letter-spacing : 2px;
+    }
+
+</style>
+</head>
+<body>
+    <div class="learn L">
+        <h3>Lets Rock and Roll guys !!!!!!!</h3>
+    </div>
+    <div class="container">
+        <p>lets see what em and can make changes to the layout</p>
+        <h1>lets see what em and rem can make changes to the layout</h1>
+    </div>
+    <div class="mycontainer">
+        <p>lets learn about vh, vw , % units</p>
+    </div>
+</body>
+</html>
