@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning about display property in css</title>
+<style>
+
+/* display  : none ->  it will remove the block and also space*/
+/* visibility : hidden -> it will temperory remove the block as per visibility and space will never be removed */
+/* to do this preview me jake embedded preview enable krna hai and live preview ko off  */
+*{
+    margin: 0;
+    padding: 0;
+}
+.L{
+    border :2px solid yellow;
+    display : inline-block;
+    margin: 50px;
+    padding : 40px;
+    display : inline-flex;
+    justify-content : space-between;
+}
+
+.dabba{
+    border: 2px solid red;
+    /* display: inline;  this will not give margin from top so we use inline block */
+
+    display: inline-block;
+    margin : 59px;
+    padding : 40px;
+    /* using display:inline we can make a block element behave like an inline element  */
+}
+
+</style>
+</head>
+<body>
+    <div class="dabba">
+        <p>I am a box yooooo!</p>
+    </div>
+    <div class="L">
+        <p>I am another box yooooo!</p>
+    </div>
+</body>
+</html>
