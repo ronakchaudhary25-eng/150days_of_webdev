@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Card</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+        }
+
+        .menu-card{
+            width: 350px;
+            background-color: white;
+
+            padding: 25px;
+
+            border-radius: 15px;
+
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .menu-card h1{
+            text-align: center;
+            color: purple;
+            margin-bottom: 15px;
+        }
+
+        .menu-card p{
+            text-align: center;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .menu-card ul{
+            list-style: none;
+        }
+
+        .menu-card li{
+            padding: 12px;
+            margin: 10px 0;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+        
+        /* :hover: styles while hovering or moving cursor */
+        .menu-card li:hover{
+            background-color: #ffe082;
+            /* moving 10 px right while hovering */
+            transform: translateX(10px);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="menu-card">
+
+        <h1>Ronak Chaudhary</h1>
+
+        <p>Learning Web Development 🚀</p>
+
+        <ul>
+            <li>🔥 Name</li>
+            <li>💻 Skills</li>
+            <li>📞 Contact</li>
+            <li>📂 Projects</li>
+            <li>📧 Email</li>
+        </ul>
+
+    </nav>
+
+</body>
+</html>
