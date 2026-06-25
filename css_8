@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning about shodows in css</title>
+    <style>
+      .a1 {
+        margin: 10px;
+        padding: 30px;
+        border: 2px solid purple;
+        box-shadow: 5px 5px 15px 5px #ee0a0af7;
+      }
+      .myline{
+       margin: 10px;
+        padding: 30px;
+        border: 2px solid rgb(4, 128, 0);
+        box-shadow: 5px 5px 15px 5px #520aeef7;
+        text-shadow: 2px 2px 4px #888888;
+        /* we use outline offset to change outline size it is not fixed like border */
+         outline: 2px solid blue;
+        outline-offset: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="apple a1">
+      hey am learning about css shadows and enjoying learning css
+    </div>
+    <div class="myline">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In, illo?
+        Voluptatibus, deserunt exercitationem minima ullam beatae porro, veniam
+        culpa facere quod quibusdam accusantium dolorem? Cum eligendi rerum
+        dicta optio? Quidem!
+      </p>
+    </div>
+  </body>
+</html>
