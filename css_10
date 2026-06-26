@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css overflow</title>
+    <style>
+    .overflow{
+        width: 40vw;
+        height : 20vh;
+        border : 2px solid red;
+
+        overflow : scroll; 
+        /* Scrollbar hamesha dikhega, chahe content overflow kare ya na kare. */
+
+         /* overflow : auto;  */
+         /* Jis direction me content overflow karega, us direction ka scrollbar automatically dikha do. */
+
+        /* white-space: nowrap; */
+        /* using no wrap all content will be in horizontal and horizontal scrool bar ajayega  */
+
+        text-overflow: ellipsis;
+        
+        /* overflow: x:y */
+        /* overflow: hidden,auto; */
+        /* i.e hide content in x and y me scroll bar  */
+
+        /* similar : */
+        overflow: auto,hidden;
+    }
+    </style>
+
+
+
+
+
+
+  </head>
+  <body>
+    <div class="overflow">
+      hey myself ronak learning web dev with high energy and happily able to
+      manage my dev and problem solving part together . and
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque sed nobis
+      asperiores adipisci? Quod doloribus officiis error, nulla hic consequatur
+      nobis harum quia nisi suscipit exercitationem quas eligendi, ducimus
+      molestias.dgdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddwwwwwwwwwwwwwwwwwwwwwwwwwwww 
+      jdfnejnfgdfccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+      cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+      dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+      ddddddddddddddddddddddddddddddddddddddddddddddvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+    </div>
+  </body>
+</html>
