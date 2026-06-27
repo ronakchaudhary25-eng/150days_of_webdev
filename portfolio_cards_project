@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stacked Portfolio Cards project2</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#0f172a;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+
+    position:relative;
+
+    width:900px;
+    height:550px;
+}
+
+/* Common */
+
+.card{
+
+    position:absolute;
+
+    width:500px;
+    height:220px;
+
+    border:3px solid white;
+    border-radius:8px;
+
+    padding:30px;
+
+    color:white;
+
+    transition:.5s ease;
+
+    cursor:pointer;
+}
+
+/* CARD 1 */
+
+.card1{
+
+    background:linear-gradient(135deg,#00d2ff,#3a7bd5);
+
+    left:0;
+    top:0;
+
+    z-index:4;
+
+    box-shadow:0 0 30px cyan;
+}
+
+/* CARD 2 */
+
+.card2{
+
+    background:linear-gradient(135deg,#00ff99,#00c896);
+
+    left:60px;
+    top:80px;
+
+    z-index:3;
+
+    box-shadow:0 0 30px #00ff99;
+}
+
+/* CARD 3 */
+
+.card3{
+
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+
+    left:120px;
+    top:160px;
+
+    z-index:2;
+
+    box-shadow:0 0 30px blue;
+}
+
+/* CARD 4 */
+
+.card4{
+
+    background:linear-gradient(135deg,#ff416c,#ff4b2b);
+
+    left:180px;
+    top:240px;
+
+    z-index:1;
+
+    box-shadow:0 0 30px tomato;
+}
+
+/* Hover Whole Stack */
+
+.container:hover .card1{
+
+    top:0;
+}
+
+.container:hover .card2{
+
+    top:170px;
+}
+
+.container:hover .card3{
+
+    top:340px;
+}
+
+.container:hover .card4{
+
+    top:510px;
+}
+
+/* Hover Individual Card */
+
+.card:hover{
+
+    transform:scale(1.05);
+
+    border-radius:25px;
+
+    z-index:10;
+
+    box-shadow:0 0 50px white;
+}
+
+h2{
+
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+p{
+
+    font-size:22px;
+}
+</style>
+<!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+
+<div class="container">
+
+<div class="card card1">
+<h2>HTML</h2>
+<p>Semantic HTML5</p>
+</div>
+
+<div class="card card2">
+<h2>CSS</h2>
+<p>Animations & Layouts</p>
+</div>
+
+<div class="card card3">
+<h2>C++</h2>
+<p>DSA & STL</p>
+</div>
+
+<div class="card card4">
+<h2>Python</h2>
+<p>Automation</p>
+</div>
+
+</div>
+
+</body>
+</html>
