@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS variables</title>
+    <style>
+      :root {
+        --color: rgb(255, 0, 247);
+        --seccolor: rgb(231, 164, 246);
+        --defpad: 23px;
+        --defop: 0.4;
+        /* defop decides visibility of text */
+        /* defpad is default padding which we can use for styling everywhere in css */
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .nav {
+        background-color: blueviolet;
+      }
+      ul {
+        display: flex;
+        border: 2px solid maroon;
+      }
+      ul li {
+        opacity: var(--defop);
+        list-style: none;
+        padding: var(--defpad);
+        border: 2px solid var(--seccolor);
+      }
+      .cont{
+        background-color: (var(--color));
+        border : 2px solid var(--seccolor);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Name</li>
+        <li>Skills</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="cont">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nihil a
+      repudiandae aspernatur nobis! Exercitationem tempore non, error ab
+      voluptates, aperiam eveniet pariatur nulla iure accusantium deserunt
+      veniam, unde molestiae aliquid obcaecati. Eligendi ad libero voluptates
+      laudantium amet eum! Rem laudantium a consequatur iure expedita.
+    </div>
+  </body>
+</html>
