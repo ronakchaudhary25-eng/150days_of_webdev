@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS more about Selectors</title>
+    <style>
+      .box:first-child {
+        background-color: aqua;
+      }
+      .box::first-line {
+        color: yellow;
+      }
+      /* to give styling to all child of boxes */
+      .boxes * {
+        border: 2px solid red;
+      }
+      /* to give styling to paragraph and anchor tag of child boc */
+      p,
+      a,
+      .box,
+      [data-color="primary"] {
+        padding-top: 45px;
+      }
+      /*  styling applying to even or odd child */
+      .box:nth-child(even) {
+        background-color: black;
+      }
+      /* applying styling to nth child from last child */
+      .box:nth-last-child(1) {
+        background-color: red;
+        color: gold;
+      }
+      .boxes::before {
+        content: "This is extra content and it will be shown before main content i.e boxes";
+        color: blue;
+      }
+
+      .boxes::after {
+        content: "This is extra content and it will be shown after main content i.e boxes";
+        color: red;
+      }
+      /*  styling if we select text */
+      ::selection {
+        background-color: black;
+        color: gold;
+      }
+      .box::first-letter {
+        color: peru;
+        font-size: 45px;
+      }
+
+      input::placeholder {
+        color: rgb(84, 84, 88);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quidem,
+        minima eos aspernatur ut modi error totam, incidunt magni, accusantium
+        voluptate! Deleniti libero voluptates magni repudiandae nesciunt
+        dignissimos fugit hic.
+      </div>
+      <div class="box">this is 2nd child of class boxes</div>
+      <div class="box">this is 3rd child of class boxes</div>
+      <input type="text" placeholder="Type your name here" />
+    </div>
+  </body>
+</html>
