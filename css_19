@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS object-fit and object-cover property</title>
+    <style>
+      .container {
+        border: 2px solid black;
+        background-color: blue;
+        width: 550px;
+        height: 450px;
+        background-image: url("https://us.123rf.com/450wm/progressman/progressman1909/progressman190900115/130695651-woman-in-black-coat-walking-along-the-sea.jpg?ver=6");
+        /*  by default background image repeats if its surrounding dimensions are larger , if we want to control this behavior we can use background-repeat property and select dimension */
+        background-position: center center;
+        /* repeat se dono axis me repeat hoga and x,y se dimesion specifically hoga repeat  */
+        /* background-repeat: repeat; */
+        background-repeat: no-repeat;
+        /* background-clip: padding-box; */
+
+      }
+      img {
+        /* width: 300px;
+        height: 350px; */
+        /* cover se image crop hojayega to fit within given dimensions */
+        object-fit: cover;
+        /* contain se image fit hojayega within given dimensions without cropping */
+        /* object-fit: contain;
+         object-position: bottom left;  */
+
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+        /* object-position: bottom left; */
+        object-fit: scale-down;
+        /* object-position: top right; */
+        object-position: 50% 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <img
+        src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
+        alt=""
+      /> -->
+    </div>
+  </body>
+</html>
