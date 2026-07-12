@@ -1,0 +1,35 @@
+console.log("Heyy am learning loops in javascript");
+let a = 1;
+for(let i = 0; i < 5; i++){
+    console.log(a+i);
+}
+
+let obj = {
+    name: "Ronak",
+    age: 18,
+    city: "Mumbai",
+    role: "developer & ai enthusiast"
+};
+
+for(let key in obj){
+    console.log(key + " : " + obj[key]);
+}
+
+for(const key in obj){
+    const element = obj[key];
+    console.log(key,element);
+}
+
+for(const key in obj){
+   console.log(key);
+}
+
+for(const c of "Ronak"){
+    console.log(c);
+}
+
+let j = 0;
+do{
+    console.log(j);
+    j++;
+}while(j < 5);
