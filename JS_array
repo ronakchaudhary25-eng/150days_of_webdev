@@ -1,0 +1,106 @@
+let arr = [1, 2, 4, 5, 7]
+//  Index  0, 1, 2, 3, 4
+
+arr[0] = 5666;
+// console.log(arr, typeof arr);
+// console.log(arr.length)
+
+// console.log(arr[0])
+// console.log(arr[2])
+// console.log(arr[4])
+
+console.log(arr.toString())
+console.log(arr.join(" and "))
+
+let num = [1,2,3,4,5]
+num.push(100)
+console.log(num)
+num.pop()
+console.log(num)
+num.unshift(200) // unshift will push element to first index
+console.log(num)
+num.shift()//shift will pop element of first index 
+console.log(num)
+
+ 
+let numbers = [1, 2, 3, 4, 5] 
+// numbers.splice(1, 2)    // poping 
+// console.log(numbers)
+numbers.splice(1, 3)   // poping 3 elements form 1st element
+console.log(numbers)
+numbers.splice(1, 3, 222, 333)  // 1st element ke baad 3 elements remove kro and add 222,333
+console.log(numbers)
+
+let a1 = [1,2]
+let a2 = [3,4]
+let a3 = [5,6]
+let result = a1.concat(a2, a3);
+
+console.log(result)
+
+// iterating in array !
+
+let a = [1, 93, 5, 6, 88]
+
+
+// for (let index = 0; index < a.length; index++) {
+//     const element = a[index];
+//     console.log(element)
+    
+// }
+
+// a.forEach((value, index, arr)=>{
+//     console.log(value, index, arr)
+// })
+
+// let obj = {
+//     a: 1,
+//     b: 2,
+//     c: 3
+// }
+// for (const key in obj) {
+//     if (Object.hasOwnProperty.call(obj, key)) {
+//         const element = obj[key]; 
+//         console.log(key, element)
+//     }
+// }
+
+for (const value of a) {
+    console.log(value)
+}
+
+let b = [1,22,28,7,91];
+
+// for (let index = 0; index < b.length; index++) {
+//     const element = b[index];
+//     newb.push(element**2)
+// }
+// same for squaring 
+let newb = b.map((e,index,b)=>{
+    return e**2
+})
+console.log(newb)
+
+// another method for iterrating array
+for(const value of b){
+    console.log(value)
+}
+
+const lessthanthirty = (e)=>{
+    if(e<30){
+        return true
+    }
+    return false
+}
+console.log(b.filter(lessthanthirty))
+
+const red1 = (a,b)=>{
+    return a+b
+}
+const red2 = (a,b)=>{
+    return a*b
+}
+console.log(result.reduce(red1))
+console.log(result.reduce(red2))
+
+console.log(Array.from("Ronakkkkk!!!!"))
